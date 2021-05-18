@@ -1,10 +1,13 @@
 import Header from "./../components/Header";
-import Footer from "./../components/Footer";
+
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
+      <br />
+      <br />
+      <br />
       <Header
         className="justify-content-md-center"
         backgroundImage="https://pbs.twimg.com/media/DSoiRWEU0AE3w4H.jpg"
@@ -74,8 +77,6 @@ const Home = () => {
           </p>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 };

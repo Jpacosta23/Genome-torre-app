@@ -4,7 +4,7 @@ import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 const Navigation = () => {
   return (
     <>
-      <>
+      <div className="navigation">
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand as={Link} to="/">
             <img
@@ -31,7 +31,7 @@ const Navigation = () => {
             </Button>
           </Form>
         </Navbar>
-      </>
+      </div>
     </>
   );
 };
