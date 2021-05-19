@@ -39,7 +39,13 @@ const JobDetail = () => {
             <p></p>
             <h3>Job Description</h3>
             <p className="text-justify col-md-6">
-              {isLoading ? null : jobDetail.serpTags.description}
+              {isLoading ? null : (
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: jobDetail.serpTags.description,
+                  }}
+                />
+              )}
             </p>
             <div className=" d-flex flex-row justify-content-around col-md-6">
               <h5>
